@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'antd/dist/antd.css';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import logo from '../../assets/HRF white-01.png';
 import lambdaLogo from '../../assets/LambdaAssets/Built by lambda.png';
@@ -56,7 +56,12 @@ const NavBar = () => {
           </>
         ) : (
           <>
-            <NavLink onClick={handleClick} className="nav-link" exact to="/login">
+            <NavLink
+              onClick={handleClick}
+              className="nav-link"
+              exact
+              to="/login"
+            >
               Login
             </NavLink>
             <div></div>

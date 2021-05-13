@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
-
-import './index.css';
 import 'antd/dist/antd.less';
 import OktaWrapper from './components/OktaWrapper';
 import App from './App';
+import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
